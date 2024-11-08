@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About Us - Lokseva</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="user/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="user/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+91 1234567890</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>lokseva@org.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-users mr-3"></i>LokSeva</h1>
+                <p class="text-uppercase" style="float:right;font-size:15px" >By Imperium</p>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="community_works.html" class="nav-item nav-link">Community Works</a>
+                    <a href="education.html" class="nav-item nav-link">Free Education Committee</a>
+                </div>
+                <a href="join-volunteer.html" class="btn btn-primary py-2 px-4 d-none d-lg-block">Join the Community</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+<div class="container my-5">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+        <h1 class="display-4">LokSeva's Free Education Committee</h1>
+        <p class="lead">Empowering underprivileged children through free, quality education and essential skill-building opportunities.</p>
+    </div>
+    
+    <!-- About the Committee -->
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <h3>About the Free Education Committee</h3>
+            <p>The Free Education Committee of LokSeva is dedicated to bridging educational gaps by offering free resources, tutoring, and mentorship to children in underserved communities. Our goal is to make education accessible to all, empowering children to unlock their full potential and secure brighter futures.</p>
+            <p>With a dedicated team of volunteers, we organize classes, distribute educational materials, and provide personalized support to students who lack access to essential learning opportunities. We believe that education is a powerful tool to bring positive change to society, and we welcome passionate individuals to join our mission.</p>
+        </div>
+        <div class="col-md-6">
+            <img class="position-absolute w-100 h-100" src="https://i.pinimg.com/564x/12/c1/f9/12c1f93f5955ae28702f655bdaf91ef8.jpg" style="object-fit: cover;">
+        </div>
+    </div>
+
+    <!-- Volunteer Form -->
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h3 class="text-center mb-4">Join Us as a Volunteer</h3>
+            <p class="text-center mb-4">Join LokSeva in this education venture, to help the underpriviledged as a volunteer, for a good cause</p>
+            <form action="#" method="POST">
+                @csrf <!-- CSRF Token for Security -->
+                <div class="form-group mb-3">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                
+                <div class="form-group mb-3">
+                    <label for="skills">Skills & Experience</label>
+                    <textarea name="skills" class="form-control" id="skills" rows="3" placeholder="Tell us about any relevant skills or experience" required></textarea>
+                </div>
+                
+                <div class="form-group mb-4">
+                    <label for="availability">Availability</label>
+                    <input type="text" name="availability" class="form-control" id="availability" placeholder="e.g., Weekends, evenings, specific hours" required>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-2">Submit Application</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+<!-- Footer Start -->
+<div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px;">
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>LokSeva</h1>
+                </a>
+                <p class="m-0">LokSeva is a hustling community platform by Imperium Official. Join as a volunteer in LokSeva's philantrophic projects and become a member of the hustling community onboard!
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <h3 class="text-white mb-4">Get In Touch</h3>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Vimannagar, Pune</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+91 1234567890</p>
+                <p><i class="fa fa-envelope mr-2"></i>lokseva@org.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
+                    <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
+                    <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
+                    <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <h3 class="text-white mb-4">Community</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="join-volunteer.html"><i class="fa fa-angle-right mr-2"></i>Join as a Volunteer</a>
+                    <a class="text-white-50 mb-2" href="education.html"><i class="fa fa-angle-right mr-2"></i>Join as a Educator</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <h3 class="text-white mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white-50 mb-2" href="community_works.html"><i class="fa fa-angle-right mr-2"></i>Community Works</a>
+                    <a class="text-white-50 mb-2" href="education.html"><i class="fa fa-angle-right mr-2"></i>Free Education Commitee</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white-50 border-top py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0">Copyright &copy; <a class="text-white" href="#">LokSeva</a>. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="user/lib/easing/easing.min.js"></script>
+<script src="user/lib/waypoints/waypoints.min.js"></script>
+<script src="user/lib/counterup/counterup.min.js"></script>
+<script src="user/lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="user/js/main.js"></script>
+</body>
+
+</html>
